@@ -1,0 +1,72 @@
+<h1>eleventy-vite-test-01</h1>
+<ul>
+<li>Check that it serves and builds just as starter blog
+<ul>
+<li>Works on Mac and Windows</li>
+</ul>
+</li>
+<li>Add vite plugin and test serve and build
+<ul>
+<li>Serve works, build breaks on windows</li>
+</ul>
+</li>
+<li>If breaks, test on Mac
+<ul>
+<li>Breaks on Mac</li>
+</ul>
+</li>
+<li>If that works, try custom input / output folders</li>
+</ul>
+<h2>Mac error:</h2>
+<p>✝  testing/2022/pg-11ty-vite-test-01   master±  npm run build</p>
+<blockquote>
+<p>muac-digital-cv@1.0.0 build</p>
+</blockquote>
+<blockquote>
+<p>npx @11ty/eleventy</p>
+</blockquote>
+<p>[11ty] Writing _site/index.html from ./index.njk</p>
+<p>vite v2.8.6 building for production...</p>
+<p>✓ 1 modules transformed.</p>
+<p>[vite]: Rollup failed to resolve import &quot;css/index.css&quot; from &quot;.11ty-vite/index.html&quot;.</p>
+<p>This is most likely unintended because it can break your application at runtime.</p>
+<p>If you do want to externalize this module explicitly add it to</p>
+<p><code>build.rollupOptions.external</code></p>
+<p>[11ty] Encountered a Vite build error, restoring original Eleventy output to _site Error: [vite]: Rollup failed to resolve import &quot;css/index.css&quot; from &quot;.11ty-vite/index.html&quot;.</p>
+<p>This is most likely unintended because it can break your application at runtime.</p>
+<p>If you do want to externalize this module explicitly add it to</p>
+<p><code>build.rollupOptions.external</code></p>
+<pre><code>at onRollupWarning (/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/node_modules/vite/dist/node/chunks/dep-9c153816.js:39242:19)
+
+at onwarn (/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/node_modules/vite/dist/node/chunks/dep-9c153816.js:39020:13)
+
+at Object.onwarn (/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/node_modules/rollup/dist/shared/rollup.js:23129:13)
+
+at ModuleLoader.handleResolveId (/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/node_modules/rollup/dist/shared/rollup.js:22419:26)
+
+at /Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/node_modules/rollup/dist/shared/rollup.js:22380:26 {
+</code></pre>
+<p>watchFiles: [</p>
+<pre><code>'/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/.11ty-vite/index.html'
+</code></pre>
+<p>]</p>
+<p>}</p>
+<p>[11ty] Problem writing Eleventy templates: (more in DEBUG output)</p>
+<p>[11ty] ENOENT: no such file or directory, stat '/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/.11ty-vite' (via Error)</p>
+<p>[11ty]</p>
+<p>[11ty] Original error stack trace: Error: ENOENT: no such file or directory, stat '/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/.11ty-vite'</p>
+<p>[11ty] Copied 2 files / Wrote 1 file in 0.14 seconds (v2.0.0-canary.4)</p>
+<h2>Windows error</h2>
+<blockquote>
+<p>muac-digital-cv@1.0.0 build</p>
+</blockquote>
+<blockquote>
+<p>npx @11ty/eleventy</p>
+</blockquote>
+<p>[11ty] Writing _site/index.html from ./index.njk</p>
+<p>[11ty] Problem writing Eleventy templates: (more in DEBUG output)</p>
+<p>[11ty] EPERM: operation not permitted, rename 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01_site' -&gt; 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01.11ty-vite' (via Error)</p>
+<p>[11ty]</p>
+<p>[11ty] Original error stack trace: Error: EPERM: operation not permitted, rename 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01_site' -&gt;
+'F:\rising-sky\testing\2022\pg-11ty-vite-test-01.11ty-vite'</p>
+<p>[11ty] Copied 2 files / Wrote 1 file in 0.33 seconds (v2.0.0-canary.4)</p>
