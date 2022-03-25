@@ -8,8 +8,9 @@
   - Breaks on Mac
 - If that works, try custom input / output folders
 
-Mac error:  
- ✝  testing/2022/pg-11ty-vite-test-01   master±  npm run build
+## Mac error:
+
+✝  testing/2022/pg-11ty-vite-test-01   master±  npm run build
 
 > muac-digital-cv@1.0.0 build
 
@@ -64,3 +65,22 @@ watchFiles: [
 [11ty] Original error stack trace: Error: ENOENT: no such file or directory, stat '/Users/patrickgrey/Documents/rising-sky/testing/2022/pg-11ty-vite-test-01/.11ty-vite'
 
 [11ty] Copied 2 files / Wrote 1 file in 0.14 seconds (v2.0.0-canary.4)
+
+## Windows error
+
+> muac-digital-cv@1.0.0 build
+
+> npx @11ty/eleventy
+
+[11ty] Writing \_site/index.html from ./index.njk
+
+[11ty] Problem writing Eleventy templates: (more in DEBUG output)
+
+[11ty] EPERM: operation not permitted, rename 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01_site' -> 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01\.11ty-vite' (via Error)
+
+[11ty]
+
+[11ty] Original error stack trace: Error: EPERM: operation not permitted, rename 'F:\rising-sky\testing\2022\pg-11ty-vite-test-01_site' ->
+'F:\rising-sky\testing\2022\pg-11ty-vite-test-01\.11ty-vite'
+
+[11ty] Copied 2 files / Wrote 1 file in 0.33 seconds (v2.0.0-canary.4)
