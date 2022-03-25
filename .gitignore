@@ -1,3 +1,5 @@
 _website-publish/
 node_modules/
 package-lock.json
+_site
+.11ty-vite
